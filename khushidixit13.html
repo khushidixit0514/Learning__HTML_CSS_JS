@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX tut28</title>
+    <style>
+        .container {
+            height: 512px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* flex properties for fex container */
+            /* default value of flex-direction is row */
+
+
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            flex-direction: row;
+
+            /* HERE default value is nowrap */
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+            /* flex-flow: direction flex wrap; ese likh skte hoo */
+            flex-flow: row-reverse wrap;
+
+
+
+            /* yeah justify the content in horizontal direction */
+            justify-content: center;
+
+            /* start end end mai space nhi aayga baki space in between box will be equal*/
+            justify-content: space-between;
+
+            /* box ke left right side mai equal space(baki jbb 2 box saath mai honge to space double ho jaygi) */
+            justify-content: space-around;
+
+            /* jagah equal thi start aur end box ke side mai bhi and in between box mai bhi */
+            justify-content: space-evenly;
+
+
+
+
+            /* yeah justify the content in vertical direction */
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: stretch;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            padding: 3px;
+            margin: 10px;
+        }
+
+        #box-1{
+            /* flex properties for a flex item */
+            /* higher the order,later it will show up in the container(big order,will place it at the end)(NEGATIVE NUMBERS ARE VALID) */
+            order: 2;
+            /* flex-grow jiska zyada number hoga vo zyada stretch hoga (NEGATIVE NUMBERS ARE INVALID)*/
+            flex-grow: 3;
+            /* flex-shrink chota krega while using horizontal slider */
+            flex-shrink: 3;
+            /* when flex-direction is set to row: flex-basis will control width */
+            /* when flex-direction is set to column: flex-basis will control height */
+            /* flex basis is simply height width ko control krta h acc to direction */
+            flex-basis: 320px;
+        }
+        #box-2{
+            order: 23;
+            flex-grow: 9;
+            flex-shrink: 7;
+        }
+        #box-3{
+            /* flex: flex-grow flex-shrink flex-basis; */
+            flex:2 2 210px;
+
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- div.box#box-$*4 -->
+        <div class="box" id="box-1">first box</div>
+        <div class="box" id="box-2">second box</div>
+        <div class="box" id="box-3">third box</div>
+        <!-- <div class="box" id="box-4">fourth box</div>
+        <div class="box" id="box-5">fifth box</div>
+        <div class="box" id="box-6">sixth box</div> -->
+    </div>
+</body>
+
+</html>

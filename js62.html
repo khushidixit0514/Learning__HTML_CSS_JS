@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <div class="container">
+        WHAT IS JSON?
+        JSON stands for java script object notation
+    </div>
+    <script>
+        // ek object tha string ki form mai bdal gya abb isse kahi bhi bhej skte h aur jo cheez hmm string mai krte h iske saath bhi kr ste h any changes you wanna do can do
+        let jsonobj={
+            name: "harry",
+            channel: "cwh",
+            friend: "rohan das",
+            food: "idli sambhar"
+        }
+        console.log(jsonobj)
+        let jsonstr=JSON.stringify(jsonobj);
+        console.log(jsonstr)
+
+        jsonstr=jsonstr.replace("harry","khushi");
+        console.log(jsonstr)
+
+        // wapas se object mai convertkrne ke liy
+        newjson=JSON.parse(jsonstr);
+        console.log(newjson)
+
+    </script>
+</body>
+</html>

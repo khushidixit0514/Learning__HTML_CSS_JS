@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON SELECTORS tut31</title>
+    <style>
+        /* div ke andr p ke andr li wale pe hi hoga 
+        div p li{
+        } */
+        div p {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* div ke direct andr p hona chaiye */
+        div>p{
+            background-color: brown;
+        }
+        /* p ke just upr div hona chaiye p is next sibling of div */
+        div+p{
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><p>this is li ke andr wala p</p></li>
+        </ul>
+        <p>this is something</p>
+        <div>
+            <p>this is another thing</p>
+        </div>
+    </div>
+    <p>this is spmething extraordinary thing</p>
+</body>
+
+</html>

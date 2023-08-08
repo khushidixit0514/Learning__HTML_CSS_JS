@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- this is comment line -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- help seo (search engine optimization ) website ka aur description de ske jldi mil jay -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <!-- laptop ya phone jaha khole vo apne aapko device ki width ke acc set krle -->
+    <meta name="content" content="...........">
+    <meta name="keywords" content="..........">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <!-- JAVA kii external linl -->
+    <script src="khushi.js"></script>
+    <!-- css ki external link -->
+    <link rel="stylesheet" href="khushi.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>heading first</h1>
+    <h2>heading second</h2>
+    <h3>heading third</h3>
+    <!-- lorem with a number writes random words because it is a emmet which helps in increasing speed of coding -->
+    <p>Lorem, ipsum dolor.</p>
+    <!-- p multiply number -->
+    <p>first</p>
+    <p>second</p>
+    <p>Lorem ipsum dolor sit, amet <br><strong>strong....</strong>
+        <hr><br> <em>emphasized...</em><br> eligendi necessitatibus eius alias sapiente error.
+    </p>
+    <!-- <b></b><i></i>ki jagah strong em use kroo thats what is recommended to u -->
+    <!-- ctrl+enter krdoo to jump into a new line -->
+    <hr>
+    <a href="https://www.google.com">this is google</a>
+    <!-- alt click krke cursor jaha hoga will copy exact same -->
+    <!-- <a href="" target="_blank"></a> isse links different tab mai open hogi -->
+    <a href="a.com" target="_blank"></a>
+    <a href="b.com" target="_blank"></a>
+    <a href="c.com" target="_blank"></a>
+    <a href="/tut4.html" target="_blank">tut4</a>
+    <img src="" alt="agr image print nhi hue to yeah show hoga">
+    <!-- source unsplash site for random photos -->
+    <!-- right click krke format document kroge too sbb theek ho jata h -->
+
+
+    <!-- TABLES AND LISTS -->
+    <ul>
+        <!-- unordered list li is list item -->
+        <li>bullets bnkr aaygi yaha</li>
+        <li>ul type disc(filled circle) square circle(hollow circle)</li>
+    </ul>
+    <ol>
+        <li>numbers roman mai aaynge yaha</li>
+        <li>ol type="" likhna padega</li>
+    </ol>
+
+    <table>
+        <thead>
+            <tr>
+                <th>roll no</th>
+                <th>name</th>
+                <th>group</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>27</td>
+                <td>khushi</td>
+                <td>a2</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>dixit</td>
+                <td>a1</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<form action="backend.php">
+    <!-- div is used as a divider but can also  use br but not recommended -->
+    <div>
+        NAME:- <input type="datetime-local">
+    </div>
+    <div>
+        <!-- id wahi honi chaiye jo for mai diya h -->
+        <label for="kdclasss">CLASS:-</label>
+        <input type="text" name="myclass" id="kdclasss">
+    </div>
+
+    <div>
+        EMAIL:- <input type="email" name="myemail">
+    </div>
+    <!-- submit krne ke liy -->
+    ARE YOU COMING ? <input type="checkbox" name="myeligibility" checked>
+    <!-- radio mai mene name same daala h -->
+    <!-- NUMBER AUR E USE hota h e used for raising power -->
+    <div>
+        GENDER: male <input type="radio" name="mygender">
+        female <input type="radio" name="mygender">
+    </div>
+    <!-- alt aur down arrow will take the selected date downwards as per my requirement lekin left wala alt dont know y -->
+    <div>
+        <input type="submit" value="SUBMIT NOW">
+    </div>
+    <label for="mygrp">AGE GROUP</label>
+        <select name="age group" id="mygrp">
+        <option value="abc">less </option>
+        <option value="xyz"selected>more</option>
+        <option value="pqr">equal</option>
+    </select>
+    
+    <div>
+        <input type="reset" value="RESET NOW">
+    </div>
+   DESCRIBE SOMETHING ABOUT YOUR LIFE? <textarea name="mytextarea" id="" cols="30" rows="10"></textarea>
+</form>
+
+</html>

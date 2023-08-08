@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units  tut29</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 10px;
+            /* for full height and width */
+            height: 100vh;
+            width: 100wh;
+        }
+      .container h1{
+        text-align: center;
+       }
+       #second{
+        /* em means parent ke size ke according it is like wrt parent ka size */
+        font-size: 3em;  
+         /* yaha 3*10=30px ho gyaa */
+
+        /* here padding  will not take fontsize(container wala) ka 10px as the parent it will take font size 3em as its parent(upr wala) */
+        /* yaha 30*3=90px ho gya */
+        padding: 3em;
+        
+       }
+       #third{
+         /* rem hmeshaa hii parent element ke acc krta h (always wrt parent element em ki tarah parent nhii bdlta ) */
+         /* yaha 25*3=75 hoga */
+        font-size: 3rem;
+        /* yaha pe bhi 25*3=75 hoga */
+        padding: 3rem;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">this is the heading</h1>
+        <h1 id="second">this is the 2nd heading</h1>
+        <h1 id="third">this is the 3rd heading</h1>
+    </div>
+</body>
+</html>

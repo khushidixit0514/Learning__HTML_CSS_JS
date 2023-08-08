@@ -1,0 +1,14 @@
+{
+  "name": "wd",
+  "version": "1.0.0",
+  "description": "this package is the best",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "khushi",
+  "license": "ISC"
+}

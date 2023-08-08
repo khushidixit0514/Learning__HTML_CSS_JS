@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z index (tut26)</title>
+    <style>
+        .box{
+            height: 90px;
+            width: 120px;
+            border: 1px solid black;
+        }
+        #box1{
+            /* z-index will define ki upper konsa aayga if they will overlap but position likhni is mustt mustt z jiska zyada hoga vo overlap krlega */
+            /* z-index will not work for static position(default) it will work for absolute,relative,fixed or sticky ke liy */
+            position: relative;
+            top: 12px;
+            z-index: 9;
+            background-color: red;
+        }
+        #box2{
+            position: relative;
+            top: 5px;
+            z-index:23;
+            background-color: blue;
+        }
+        #box3{
+            /* display: none;  jagah and elements both hide  */
+            /* visibility: hidden; space(jagah) rhti h and elements hide*/
+            /* visibility: hidden; */
+            /* display: none; */
+            background-color: yellow;
+        }
+        #box4{
+        
+            background-color:green ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

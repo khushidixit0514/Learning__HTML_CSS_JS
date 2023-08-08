@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js events </title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto reprehenderit eum quasi inventore, cumque dicta, labore commodi praesentium officia, accusamus quae placeat incidunt perspiciatis tempora optio. Excepturi, sequi obcaecati voluptatum minima temporibus sapiente provident error ipsa nihil quasi, fugit eaque libero iure officiis beatae autem commodi sit? Placeat, neque!</p>
+    <button id="btn" onclick="togglehide()">SHOW/HIDE</button>
+    <script>
+        function togglehide(){
+            let btn=document.getElementById(`btn`);
+            let para=document.getElementById(`para`);
+            if(para.style.display!=none){
+            para.style.display=`none`;
+            }
+            else{
+                para.style.display=`block`;
+            }
+        }
+    </script>
+</body>
+</html>

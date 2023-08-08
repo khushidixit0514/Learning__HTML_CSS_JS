@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths object in javascript</title>
+    <style>
+        .heading{
+            font-size: large;
+            color: black;
+            border: 2px solid black;
+            background-color: aqua;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">this is maths object tutorial</div>
+    <script>
+        let m=Math;
+        console.log(m)
+
+        // PRINTING THE CONSTANTS
+        console.log(Math.LN10)
+        console.log(Math.E)
+        console.log(Math.LOG2E)
+        console.log(Math.PI)
+
+        //    PRINTING THE FUNCTION
+        let a=3.66;
+        let b=4;
+        console.log("value of a and b", a,b);
+        console.log("rounded value of a and b ", Math.round(a), Math.round(b));
+
+        console.log("2 raised to power 3 is " ,Math.pow(2,3))
+        console.log(Math.sqrt(36))
+        console.log(Math.sqrt(50))
+
+        // CEIL AND FLOOR
+        console.log(Math.ceil(5.8));
+        console.log(Math.floor(5.8));
+
+        // ABS Function
+        console.log("absolute value of 5.66 is ",Math.abs(5.66));
+        console.log("absolute value of -5.66 is ",Math.abs(-5.66));
+
+        //  TRIGNOMETRIC FUNCTION
+        console.log("absolute value of sin(pi) is ",Math.sin(Math.PI/2));
+        console.log("absolute value of tan(pi) is ",Math.tan(Math.PI/2));
+        console.log("absolute value of cos(pi) is ",Math.cos(Math.PI/2));
+
+        // MIN MAX FUNCTION
+        console.log("minimum value among 2, 3, 4, 5 " ,Math.min(2,3,4,5));
+        console.log("maximum value among 2, 3, 4, 5 " ,Math.max(2,3,4,5));
+        
+        //  GENERATING A RANDOM NUMBER
+        let r=Math.random();
+        console.log("random number is", r);
+
+        // GENERATING RANDOM NO BETWEEN 1 AND 100
+        let mm=1;
+        let nn=100;
+        let r1_100= mm+(nn-mm)*Math.random()
+        console.log("random no btw 1 and 100 is ", r1_100)
+
+
+
+    </script>
+</body>
+</html>

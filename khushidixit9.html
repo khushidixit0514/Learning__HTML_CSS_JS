@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION BAR tut23</title>
+    <style>
+    .bar{
+        background-color: black;
+        border-radius: 28px;
+    }
+    /* usko ek line mai lane ke liy li mai krungi */
+    /* bullet htane ke liy list style li mai */
+    /* background color hta li mai float lgate hi vo parent element se hat jata h is liy hmm overflow auto use krnge ul mai */
+    .bar li{
+        float: left;
+        list-style: none;
+        padding: 4px 4px;
+        color: white;
+        margin: 3px 3px;
+    }
+    .bar ul{
+        overflow: auto;
+    }
+    #search{
+        padding: 3px 3px;
+        float: right;
+        margin:5px 5px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="bar">
+            <ul>
+                <li id="option1">HOME</li>
+                <li id="option2">MENU</li>
+                <li id="option3">ABOUT</li>
+                <li id="option4">CONTACT</li>
+                <input id="search" class="word2" type="text" placeholder="search over me">
+                <!-- placeholder mai jo linkhungi searchbox ke upr likha aayga -->
+                <!-- agr searchbox wale dibbe prr kuch krna h color background color border border radius padding wagera krlenaa..... -->
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

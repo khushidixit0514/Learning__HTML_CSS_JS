@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Lobster&family=Roboto&display=swap');
+*{
+margin: 0px;
+box-sizing: border-box;
+padding: 0;
+}
+ /* var data = google.visualization.arrayToDataTable([
+         ['Element', 'Density', { role: 'style' }],
+         ['Copper', 8.94, '#b87333'],            // RGB value
+         ['Silver', 10.49, 'silver'],            // English color name
+         ['Gold', 19.30, 'gold'],
+         ['Platinum', 21.45, 'color: #e5e4e2' ], // CSS-style declaration
+      ]); */
+#navbar{
+    background-color: black;
+    padding:12px 3px;
+    font-family: 'Alkatra', cursive;
+    
+   
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 3px 3px;
+    margin: 2px 32px;
+}
+
+#introSection::before{
+
+    background: center/ cover no-repeat url('/static/dancepic.jpg');
+    background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.9;
+        content: "";
+        z-index: -1;
+        opacity: 0.7;
+}
+#introSection{
+    height: 240px;
+    color: aqua;
+
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+}
+
+#introSection div.small{
+    font-size: 2rem;
+    font-style: italic;
+    color: black;
+    margin: 0px 400px;
+   
+}
+#introSection div.big{
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+}
+
+.h2{
+   text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Alkatra', cursive;
+    
+}
+.mid{
+    height: 150px;
+    width: 450px;
+    font-size: medium;
+    border: 2px solid black;
+    border-radius: 0.3;
+    display: inline-block;
+    padding: 7px 6px;
+    margin: 5px 5px;
+    background-color: rgb(198, 184, 159);
+    text-align: center;
+    
+}
+#middlebox{
+   
+    height:200px ;
+   
+   background-color: rgb(165, 164, 164);
+    font-weight: bold;
+}
+
+
+#sponsorsSection{
+    height: 300px;
+    background-color: blue;
+}
+#logo{    
+color: blue;                 
+}
+.class{
+    font-size: large;
+    color: white;
+    text-align: center;
+
+}
+#footer{
+    background-color: black;
+    font-size: small;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}

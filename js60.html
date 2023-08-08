@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut60(Arrow Functions)</title>
+</head>
+<body>
+    <div class="container">these are arrow functions</div>
+    <script>
+    
+
+        // function greet(){
+        //     console.log(`GOOD MORNING`)
+        // }
+        // greet();
+
+        // iska shortcut
+        let greet=()=>console.log(`gm`);
+
+
+
+        // let sum2=(a,b) =>{
+        //     return a+b;
+        // };
+
+        // // iska shortcut
+        // let sum2=(a,b)=> a+b;
+
+
+          //    greet();
+    //    setTimeout(()=>{
+    //     console.log("we are inside timeout")
+    //    }
+    //     ,2000
+    //    )
+
+let obj1={
+    names:["khushi","udhav","tapasya"],
+    speakk(){
+        greeting: "gm",
+        this.names.forEach((student)=>{
+            console.log(this.greeting +"kukdoo koo"+ student);
+    })
+    }
+}
+// known as lexical this
+// console ke andr wala this will point to bhr wala arrow mtlb obj1 wala arrorw na kii student wala (qki vo parent wale arrow ko target krega)
+obj1.speakk();
+
+
+   
+    </script>
+ 
+</body>
+</html>
